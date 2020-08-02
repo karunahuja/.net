@@ -8,14 +8,14 @@ namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
-        
-        public string Index()
+        // GET: Home
+        public ActionResult Index()
         {
-            return "Hello";
+            return View("Rename");
         }
-        public string Name()
+        public ViewResult AboutUs()
         {
-            return "Karun";
+            return View();
         }
     }
 }
